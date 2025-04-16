@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://task-board-2.onrender.com";
+const API_BASE_URL = "https://task-board-2.onrender.com/tasks";
 
 const taskForm = document.getElementById("task-form");
 const taskList = document.getElementById("task-list");
@@ -9,7 +9,6 @@ taskForm.addEventListener("submit", async (e) => {
   const title = document.getElementById("title").value;
   const description = document.getElementById("description").value;
   const priority = document.getElementById("priority").value;
-
   const task = {
     title,
     description,
