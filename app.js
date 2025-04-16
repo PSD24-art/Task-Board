@@ -19,7 +19,7 @@ taskForm.addEventListener("submit", async (e) => {
   };
 
   try {
-    const res = await fetch(API_URL, {
+    const res = await fetch(API_BASE_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(task)
@@ -36,7 +36,7 @@ taskForm.addEventListener("submit", async (e) => {
 // Load all tasks
 async function loadTasks() {
   try {
-    const res = await fetch(API_URL);
+    const res = await fetch(API_BASE_URL);
     const tasks = await res.json();
     tasks.forEach(task => renderTask(task));
   } catch (err) {
@@ -69,7 +69,7 @@ taskList.addEventListener("click", async (e) => {
     const taskId = taskElement.dataset.id;
 
     try {
-      await fetch(`${API_URL}/${taskId}`, { method: "DELETE" });
+      await fetch(`${API_BASE_URL}/${taskId}`, { method: "DELETE" });
       taskElement.remove();
     } catch (err) {
       alert("Failed to delete task.");
