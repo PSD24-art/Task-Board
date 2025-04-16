@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskBoard Pro</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TaskBoard Pro</h1>
+
+    <!-- Task Form -->
+    <form id="task-form">
+      <input type="text" id="title" placeholder="Task Title" required />
+      <textarea id="description" placeholder="Description"></textarea>
+      <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button type="submit" id="submitbtn">Add Task</button>
+    </form>
+
+    <!-- Tasks Display -->
+    <div id="task-list" class="task-list"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: #CAC2B5;
+    color:#4D243D
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size:45px;
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  input, textarea, select, button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+ 
+  #title {
+    border: 0px solid black;
+    border-radius: 6px;
+  }
+
+  #description {
+    border: 0px solid black;
+    border-radius: 6px;
+  }
+  #priority{
+    border: 0px solid black;
+    border-radius: 6px;
+  }
+
+  #submitbtn {
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #4D243D; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #submitbtn:hover {
+    background-color: #007fbe;
+  }
+  
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .task {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    Color:#401e33;
+  }
+  
+  .task h3 {
+    margin: 0;
+  }
+  
+  .task-buttons {
+    margin-top: 10px;
+
+  }
+  
+  .task-buttons button {
+    margin-right: 10px;
+    background-color: #401e33;
+    color:white;
+  }
+  
