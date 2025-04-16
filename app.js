@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://task-board-backend.onrender.com/tasks";
+const API_BASE_URL = "https://task-board-2.onrender.com";
 
 const taskForm = document.getElementById("task-form");
 const taskList = document.getElementById("task-list");
