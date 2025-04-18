@@ -49,8 +49,8 @@ body {
     background-color: #4D243D; /* Green */
     color: white;
     border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    cursor:pointer;
+    transition: background-color 0.5s ease;
   }
   
   #submitbtn:hover {
@@ -78,12 +78,20 @@ body {
   
   .task-buttons {
     margin-top: 10px;
-
+    
   }
   
   .task-buttons button {
     margin-right: 10px;
     background-color: #401e33;
     color:white;
+    cursor:pointer;
+    border: 0px solid black;
+    transition: background-color 0.2s ease-in;
+    border-radius: 0px;
   }
-  
+  .task-buttons button:hover {
+    background-color: #007fbe;
+    border-radius: 6px;
+    transition: border-radius 0.2s ease-out;
+  }

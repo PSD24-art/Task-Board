@@ -16,7 +16,6 @@ taskForm.addEventListener("submit", async (e) => {
     status: "Pending",
     created_at: new Date().toISOString()
   };
-
   try {
     const res = await fetch(API_BASE_URL, {
       method: "POST",
